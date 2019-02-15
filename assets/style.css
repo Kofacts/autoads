@@ -23,14 +23,27 @@ a.navbar-brand {
 div.header--main-nav-col {
     width: calc(100vw / 3) !important;
 }
-
+button.step-how {
+    height:50px;
+    width:50px;
+    border-radius: 50px;
+    border-color: #DB661C;
+    color:#DB661C;
+}
 .logo-box-nav {
     background: black;
     height: 60px;
     width: 200px;
     margin: 0 auto;
 }
-
+.how_it_works {
+    margin-top: 200px;
+    color: black;
+}
+.how_it_works span {
+    font-size: 25px;
+    font-family: Helvetica;
+}
 .logo-box--nav-img {
     width: 100px;
     margin: 0 auto;
@@ -180,7 +193,9 @@ b.content-number {
     font-weight: 600;
     color: #DB661C;
 }
-
+.tt-5 {
+    margin-top: 205px !important;
+}
 .believer--main-content {
     margin-top: -250px;
     margin-left: 90px;
@@ -382,7 +397,13 @@ li.footer-list {
 section.main {
     margin-top: 200px;
 }
-
+section.bg-black  {
+    padding-top: 150px;
+    background: black;
+    color: white;
+    height: 350px;
+    padding-bottom: 100px;
+}
 .bg_color {
     width: 40%;
     float: left;
@@ -395,9 +416,22 @@ span.main {
 
 span.sub {
     font-family: Helvetica;
-    font-size: 20px;
+    font-size: 14px;
 }
 
+.card-side {
+    position: absolute;
+    width: 90%;
+    height:90vh !important;
+    position: absolute;
+    z-index:999;
+}
+.btn-proceed {
+    font-weight: 300;
+    padding:10px !important;
+    padding-left: 20px !important;
+    padding-right:20px !important;
+}
 .p-100 {
     height: 100px
 }
@@ -412,6 +446,15 @@ span.sub {
 }
 .text-bold {
     font-weight: 600;
+}
+.smaller-text {
+    font-size:13px;
+    font-family: Helvetica;
+}
+.order {
+    border:1px solid #db661c;
+    font-weight: 300;
+    font-family: Helvetica;
 }
 .multi-steps>li.is-active:before,
 .multi-steps>li.is-active~li:before {
@@ -476,7 +519,8 @@ span.sub {
 }
 
 .multi-steps>li.is-active:before {
-    background-color: #fff;
+    background-color: #DB661C;
+    color:white;
     border-color: #DB661C;
 }
 
@@ -578,12 +622,110 @@ form textarea:focus+label {
     -webkit-transform: translateZ(0) translateY(-100%);
     transform: translateZ(0) translateY(-100%);
 }
+input,select,input:hover,input:focus {
+    outline:0px;
+}
 .select2-container--default .select2-selection--single,.select2-container--default.select2-container--focus .select2-selection--multiple {
     border:1px solid #DB661C !important; 
-    height: 50px !important;
-    padding: 10px !important;
-    margin-right:1.5rem!important;
+    height: 40px !important;
+    padding: 5px !important;
+    /* margin-right:1.5rem!important; */
+    font-family: Helvetica !important;
+    font-weight: 300;
 }
+.select2-container {
+    width: 100% !important;
+}
+.order-textarea {
+    height:100%;
+}
+
+/** tesimonial **/
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* ---------------------- */
+/*       TESTIMONIAL      */
+/* ---------------------- */
+.parallax-section{
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+#testimonial{
+	padding: 130px 0 95px;
+	background-image: url(../images/bg-testimonial.jpg);
+}
+#testimonial .overlay{
+	background: black;
+}
+.ts-testimonial-slide{
+	text-align: center;
+	color: #ffffff;
+	width: 85%;
+	margin: 0 auto;
+}
+.ts-testimonial-slide p{
+	font-size: 24px;
+	line-height: 36px;
+	font-style: italic;
+	font-family: 'Droid Serif';
+	margin-bottom: 35px;
+}
+.ts-testimonial-slide .ts-testimonial-item {
+  margin-bottom: 15px;
+}
+.ts-testimonial-slide .ts-testimonial-item .icon-client{
+	background: #ffffff;
+	width: 29px;
+	height: 29px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	float: left;
+	text-align: center;
+	line-height: 29px;
+	margin-top: 2px;
+}
+.ts-testimonial-slide .ts-testimonial-item .infor-client {
+  display: inline-block;
+  margin: 0 auto;
+  width: auto;
+}
+.ts-testimonial-slide .ts-testimonial-item  .client-name{
+	padding-left: 38px;
+	font-size: 12.8px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	display: block;
+	line-height: normal;
+	white-space: nowrap;
+}
+.ts-testimonial-slide .ts-testimonial-item  .client-position{
+	font-size: 12px;
+	font-style: italic;
+	line-height: normal;
+	padding-left: 38px;
+	display: block;
+	text-align: left;
+}
+.ts-testimonial-slide .ts-testimonial-item  .client-position a{
+	color: white;
+}
+.ts-testimonial-slide .ts-testimonial-item  .client-position a:hover{
+	color: #5ed9e7;
+}
+/** end **/
 form input[type="checkbox"],
 form input[type="radio"] {
     position: absolute;

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/multistep-form.scss">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -38,218 +39,310 @@
         </nav>
     </section>
 
-    <section class="main" style="height:100%; margin-bottom:100px;">
+    <section class="bg-black">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 ">
+                <div class="col-lg-6 ">
                     <span class="main">Begin your Advertisement Today,</span>
-                    <br>
-                    <span class="sub">It's as simple as ABC.. Like literally</span>
-                </div>
-            </div>
-
-            <div class="row container">
-                <div class="col-lg-12">
-                    <div class=" mt-5 p-100">
-                        <ul class="list-unstyled multi-steps">
-                            <li class="link1 is-active">Product Information</li>
-                            <!-- <li class="link2">Preferred Channels</li> -->
-                            <li class="link2">Preferences</li>
-                            <li class="link3">Expected Results</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-12">
-                    <div class="card mt-3 p-100 ml-3 mr-1">
-                        <div class=" container ml-2 mt-4">
-                            <form action="#">
-                                <div class="row first_stage">
-                                    <div class="col-sm-6">
-                                        <div class="low">
-                                            <input type="text" name="fancy-text" id="fancy-text" />
-                                            <label for="fancy-text"> Product Name</label>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-sm-6">
-                                        <div class="low mr-4">
-                                            <input type="text" name="fancy-text" id="fancy-text" />
-                                            <label for="fancy-text"> Product Name</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-12 mr-4">
-                                        <select class="form-control mr-4 form-group product-options">
-                                            <option>Product Option</option>
-                                            <option>Product Option</option>
-                                            <option>Product Option</option>
-                                        </select>
-                                        <br><br>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="low mr-4">
-                                            <textarea name="fancy-textarea" id="fancy-textarea"></textarea>
-                                            <label for="fancy-textarea">Product Description</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <span>Link to Product Video (Youtube, Facebook etc)</span>
-                                        <div class="low mr-4 mt-1">
-                                            <input type="text" name="fancy-text" id="fancy-text" />
-                                            <label for="fancy-text"> Product Video</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-lg-12">
-                                        <span>Product images</span>
-                                        <br>
-                                        <div class="row img-upload-section">
-                                            <div class="col-lg-3">
-                                                <button class="upload-btn">&#x2b;</button>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <div class="uploaded-imgs">
-                                                    Images Uploaded
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <br>
-                                    <hr>
-                                    <hr>
-                                    <div class="col-sm-12 col-lg-12 mt-3 mr-4 float-right">
-                                        <button class="header-cta float-right  mr-4 proceed1" type="button">Proceed
-                                            &#x2192;</button>
-                                    </div>
-
-                                </div>
-
-                                <div class="row second_stage">
-                                    <div class="col-sm-12 col-lg-12">
-                                        <div class="low">
-                                            <div class="col-sm-12 mr-4">
-                                                <span>Target Channels</span>
-                                                <br>
-                                                <select style="width:100% !important;" class="form-control mr-4 mt-3 form-group product-options"
-                                                    multiple>
-                                                    <option>Product Option</option>
-                                                    <option>Product Option</option>
-                                                    <option>Product Option</option>
-                                                </select>
-                                                <br><br>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-12 col-lg-12">
-                                        <span class="ml-3">
-                                            <small class="text-bold">Demography Preferences</small>
-                                        </span>
-                                    </div>
-
-                                    <div class="col-sm-12 ml-3 mt-4 col-lg-12">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-sm-12">
-                                                <span>Preferred gender</span>
-                                                <br>
-                                                <select style="width:100% !important;" class="form-control mr-4 mt-3 ml-3 mt-4 form-group product-options">
-                                                    <option>Male</option>
-                                                    <option>Females</option>
-                                                    <option>Both</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-lg-6 col-sm-12">
-                                                <span>Preferred Age</span>
-                                                <br>
-                                                <select style="width:100% !important;" class="form-control mr-4 mt-3 ml-3 mt-4 form-group product-options">
-                                                    <option>Male</option>
-                                                    <option>Females</option>
-                                                    <option>Both</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-lg-12 col-sm-12 mt-4">
-                                                <span>Interests</span>
-                                                <br>
-                                                <select style="width:100% !important;" class="form-control mr-4 mt-3 ml-3 mt-4 form-group product-options">
-                                                    <option>Male</option>
-                                                    <option>Females</option>
-                                                    <option>Both</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-12 col-lg-12 mt-3 mr-4 float-right">
-
-                                        <button class="header-cta float-right  mr-4 proceed2" type="button">Proceed
-                                            &#x2192;</button>
-
-                                        <button class="header-cta float-right  mr-4 proceed2" type="button">
-                                            &#x2190;Previous
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="row third_stage">
-                                    <div class="col-sm-12">
-                                        <div class="low mr-4">
-                                            <textarea name="fancy-textarea" id="fancy-textarea"></textarea>
-                                            <label for="fancy-textarea">What are you looking to achieve</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-12 col-lg-12 mt-3 mr-4 float-right">
-                                        <button class="header-cta float-right  mr-4 proceed2" type="submit">Proceed
-                                            &#x2192;</button>
-
-                                        <button class="header-cta float-right  mr-4 proceed2" type="button">
-                                            &#x2190;Previous
-                                        </button>
-                                    </div>
-                                </div>
-                                <!-- <div class="row fourth_stage"></div> -->
-                            </form>
+                    <br><br>
+                    <span class="sub pt-3 mt-3">
+                        It's as simple as ABC.. Like literally We’re excited (yes, this stuff excites us) to learn
+                        about your paid marketing goals and explore how AdStage technology can help you exceed them.
+                        Our customers report saving over 20% in ad spend while saving countless hours thanks to our
+                        automated platform. Our newest technology, Join, links ad, web, and sales data so you optimize
+                        for leads that turn into paying customers!
+                    </span>
+                    <br><br>
+                    <small class="pt-4">Services we support:</small>
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <a class="social"><i class="zmdi zmdi-facebook"></i></a>
+                        </div>
+                        <div class="col-sm-1">
+                            <a class="social"><i class="zmdi zmdi-twitter"></i></a>
+                        </div>
+                        <div class="col-sm-1">
+                            <a class="social"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <div class="col-sm-1">
+                            <a class="social"><i class="zmdi zmdi-youtube"></i></a>
+                        </div>
+                        <div class="col-sm-1">
+                            <a class="social"><i class="zmdi zmdi-google"></i></a>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-lg-6 mb-5">
+                    <div class="card card-side" style="color:black">
+                        <div class="row container">
+                            <div class="col-lg-12">
+                                <div class=" mt-3 p-100">
+                                    <ul class="list-unstyled multi-steps">
+                                        <li class="link1 is-active">Basic Info.</li>
+                                        <!-- <li class="link2">Preferred Channels</li> -->
+                                        <li class="link2">Preferences</li>
+                                        <li class="link3">Expected Results</li>
+                                    </ul>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row first_stage mt-3">
+                                    <div class="col-lg-12 form-group">
+                                        <label class="small-text smaller-text">Product Name</label>
+                                        <br>
+                                        <input class="form-control order" placeholder="What is the name of your Product"
+                                            type="text" name="product_name" />
+                                    </div>
+
+                                    <div class="col-lg-12 form-group">
+                                        <label class="small-text smaller-text">Company Name</label>
+                                        <br>
+                                        <input class="form-control order" placeholder="What is the name of your Company"
+                                            type="text" name="product_name" />
+                                    </div>
+
+                                    <div class="col-lg-12 form-group">
+                                        <label class="small-text smaller-text">Product Category</label>
+                                        <br>
+                                        <select class="form-control mr-4 form-group order product-options">
+                                            <option>Product Option</option>
+                                            <option>Product Option</option>
+                                            <option>Product Option</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12 form-group">
+                                        <label class="small-text smaller-text">Product Website</label>
+                                        <br>
+                                        <input class="form-control order" placeholder="What is the Website Address of Product"
+                                            type="website" name="product_name" />
+                                    </div>
+
+                                    <div class="col-lg-12 form-group">
+                                        <label class="small-text smaller-text">Product Image/Video</label>
+                                        <br>
+                                        <input class="form-control order" placeholder="What is the Website Address of Product"
+                                            type="website" name="product_name" />
+                                    </div>
+
+                                    <div class="col-lg-12 mt-3">
+                                        <button class="header-cta btn-proceed float-right proceed1" type="button">Proceed
+                                            &#x2192;</button>
+                                    </div>
+
+                                </div>
+                                <div class="row second_stage mt-3">
+                                    <div class="col-lg-12 form-group">
+                                        <label class="small-text smaller-text">Target Demography</label>
+                                        <br>
+                                        <!-- eenagers, Adults, Unemployed, Working Population, Parents, Elderly -->
+                                        <select class="form-control mr-4 form-group order product-options">
+                                            <option>Teenagers</option>
+                                            <option>Adults</option>
+                                            <option>Umemployed</option>
+                                            <option>Working Population</option>
+                                            <option>Parents</option>
+                                            <option>Elderly</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-12 form-group">
+                                        <label class="small-text smaller-text">Target Channels</label>
+                                        <br>
+                                        <select class="form-control mr-4 form-group order product-options" multiple>
+                                            <option>Facebook</option>
+                                            <option>Twitter</option>
+                                            <option>Youtube</option>
+                                            <option>Linkedin</option>
+                                            <option>Google</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-12 form-group">
+                                        <label class="small-text smaller-text">Target Number of Views</label>
+                                        <br>
+                                        <input class="form-control order" placeholder="What is your expected Number of Views"
+                                            type="text" name="product_name" />
+                                    </div>
+                                    <div class="col-lg-12 form-group">
+                                        <label class="small-text smaller-text">Target Number of Clicks</label>
+                                        <br>
+                                        <input class="form-control order" placeholder="What is your expected Number of Clicks"
+                                            type="text" name="product_name" />
+                                    </div>
+                                    <div class="col-lg-12 form-group">
+                                        <label class="small-text smaller-text">Preferred Call to Action Text</label>
+                                        <br>
+                                        <input class="form-control order" placeholder="Preferred CTA eg Book Cab or Contact us"
+                                            type="text" name="product_name" />
+                                    </div>
+                                    <div class="col-lg-12 mt-3">
+                                        <button class="header-cta btn-proceed float-right proceed2" type="button">Proceed
+                                            &#x2192;</button>
+                                    </div>
+                                </div>
+                                <div class="row third_stage mt-3">
+                                    <div class="col-lg-12 form-group">
+                                        <label class="small-text smaller-text">Total Budget (&#x20a6;)</label>
+                                        <br>
+                                        <input class="form-control order" placeholder="What is your expected Number of Views"
+                                            type="text" name="product_name" />
+                                    </div>
+
+                                    <div class="col-lg-12 form-group">
+                                        <label class="small-text smaller-text">Desired Result</label>
+                                        <br>
+                                        <textarea class="form-control order order-textarea" placeholder="Tell us what you are looking to achieve at the end of it all"></textarea>
+                                    </div>
+
+                                    <div class="col-lg-12 form-group mt-4">
+                                        <label class="small-text smaller-text">Side Note?</label>
+                                        <br>
+                                        <textarea class="form-control order order-textarea" placeholder="Any other thing we need to know?"></textarea>
+                                    </div>
+                                    <div class="col-lg-12 mt-3">
+                                        <button class="header-cta btn-proceed float-right proceed2 mt-4" type="button">Proceed
+                                            &#x2192;</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row how_it_works">
+                    <div class="col-sm-12 mt-5 pt-5 col-lg-6 float-left">
+                        <span class="pt-5">How it Works</span>
+                        <br>
+                        <small>Getting up and running.</small>
+
+                        <div class="mt-4">
+                            <button class="step-how">1</button>
+
+                            <span class="pl-3">
+                                First Step One One One
+                            </span><br>
+                            <small class="pl-5 ml-4 float-right">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti unde, dolorum soluta
+                                velit aut re
+                            </small>
+                        </div>
+
+                        <div class="mt-5 pt-4">
+                            <button class="step-how">2</button>
+
+                            <span class="pl-3">
+                                First Step One One One
+                            </span><br>
+                            <small class="pl-5 ml-4 float-right">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti unde, dolorum soluta
+                                velit aut re
+                            </small>
+                        </div>
+
+                        <div class="mt-5 pt-4">
+                            <button class="step-how">3</button>
+
+                            <span class="pl-3">
+                                First Step One One One
+                            </span><br>
+                            <small class="pl-5 ml-4 float-right">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti unde, dolorum soluta
+                                velit aut re
+                            </small>
+                        </div>
+
+                        <div class="mt-5 pt-4">
+                            <button class="step-how">4</button>
+
+                            <span class="pl-3">
+                                First Step One One One
+                            </span><br>
+                            <small class="pl-5 ml-4 float-right">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti unde, dolorum soluta
+                                velit aut re
+                            </small>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 mt-5 pt-5 col-lg-6 float-right">
+                        <img class="mt-5 tt-5" src="assets/img/projection_transparent.svg" height="450" id="header-content-right--img" />
+                    </div>
+                </div>
             </div>
 
+    </section>
+    <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+        <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none; fill:black;"></path>
+    </svg>
+
+    <!--testimonials-->
+    <section id="testimonial" class="parallax-section">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="ts-testimonial-slide">
+                <div class="ts-testimonial-item">
+                    <p>"By having a bigger purpose, it just might be that Avira's building a 21st century design
+                        studio: the crucible of big, world-changing ideas."</p>
+                    <div class="infor-client">
+                        <span class="icon-client"><img src="assets/images/icon-testimonial.png" alt=""></span>
+                        <span class="client-name">ROBERT SMITH</span>
+                        <span class="client-position">Ceo of <a href="#">Geckoos.com</a></span>
+                    </div>
+                </div>
+                <div class="ts-testimonial-item">
+                    <p>"By having a bigger purpose, it just might be that Avira's building a 21st century design
+                        studio: the crucible of big, world-changing ideas."</p>
+                    <div class="infor-client">
+                        <span class="icon-client"><img src="assets/images/icon-testimonial.png" alt=""></span>
+                        <span class="client-name">ROBERT SMITH</span>
+                        <span class="client-position">Ceo of <a href="#">Geckoos.com</a></span>
+                    </div>
+                </div>
+                <div class="ts-testimonial-item">
+                    <p>"By having a bigger purpose, it just might be that Avira's building a 21st century design
+                        studio: the crucible of big, world-changing ideas."</p>
+                    <div class="infor-client">
+                        <span class="icon-client"><img src="assets/images/icon-testimonial.png" alt=""></span>
+                        <span class="client-name">ROBERT SMITH</span>
+                        <span class="client-position">Ceo of <a href="#">Geckoos.com</a></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <hr>
+    <!--end -->
     <!-- belivers-->
-    <section class="believers--main">
+    <section class="believers--main mt-4" style="border-bottom:0px !important">
         <div class="container">
             <div class="row stretch-height">
-                <div class="col-sm-3 mt-4 border-right">
-                    <span class="center-text">These People Believe in us</span>
+                <div class="col-sm-2">
+                    <img class="" style="width:100%" src="assets/img/logo3.png" />
                 </div>
-                <div class="col-sm-2 border-right">
-                    <img class="prtner-logo" src="assets/img/logo1.png" />
-                </div>
-
-                <div class="col-sm-2 border-right">
-                    <img class="prtner-logo" src="assets/img/logo2.png" />
+                <div class="col-sm-2 ">
+                    <img class="" style="width:100%" src="assets/img/logo1.png" />
                 </div>
 
-                <div class="col-sm-2 border-right">
-                    <img class="prtner-logo" src="assets/img/logo3.png" />
+                <div class="col-sm-2 ">
+                    <img class="" style="width:100%" src="assets/img/logo2.png" />
+                </div>
+
+                <div class="col-sm-2 ">
+                    <img class="" style="width:100%" src="assets/img/logo3.png" />
                 </div>
 
                 <div class="col-sm-2 border-right" id="border-last">
-                    <img class="prtner-logo" src="assets/img/logo4.png" />
+                    <img class="" style="width:100%" src="assets/img/logo4.png" />
+                </div>
+
+                <div class="col-sm-2 ">
+                    <img class="" style="width:100%" src="assets/img/logo2.png" />
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="footer-section mt-4">
+    <section class="footer-section mt-2">
         <footer class="footer container">
             <div class="row">
                 <div class="col-sm-3">
@@ -328,6 +421,7 @@
             crossorigin="anonymous"></script>
         <script src="assets/script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
     </footer>
 </body>
 
