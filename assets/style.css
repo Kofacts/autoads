@@ -9,7 +9,7 @@ html {
 }
 .header--main {
     width: 100%;
-    height: calc(100vh - 0px);
+    height: calc(100vh - 100px);
     background: black;
     padding-top: 30px;
 }
@@ -1049,6 +1049,9 @@ form .low {
 @media only screen and (max-width: 600px) {
     .trans_circle {
         height: 40%;
+    }
+    .header--main {
+        height:100vh !important;
     }
     .sliders {
         margin-top:0px;
