@@ -474,7 +474,7 @@ li.footer-list {
     top: 0;
     z-index: 9999;
     height: 100px;
-    width: 90%;
+    width: 100%;
     background: black;
     color: #fff;
     line-height: 100px;
@@ -1052,6 +1052,9 @@ form .low {
     }
     .header--main {
         height:100vh !important;
+    }
+    #global-nav {
+        width:90% !important;
     }
     .sliders {
         margin-top:0px;
