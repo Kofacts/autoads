@@ -1060,6 +1060,7 @@ form .low {
     .home_nav_mobile {
         padding-top: 70px !important;
         padding-bottom: 50px !important;
+        margin-right:20px !important;
     }
 
     .li_mobile_home {
