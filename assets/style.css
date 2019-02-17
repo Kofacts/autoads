@@ -4,10 +4,12 @@ body {
     overflow-x: hidden;
     width: 100%;
 }
-
+html {
+    overflow-x: hidden;
+}
 .header--main {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 0px);
     background: black;
     padding-top: 30px;
 }
@@ -472,7 +474,7 @@ li.footer-list {
     top: 0;
     z-index: 9999;
     height: 100px;
-    width: 100%;
+    width: 90%;
     background: black;
     color: #fff;
     line-height: 100px;
@@ -1048,7 +1050,9 @@ form .low {
     .trans_circle {
         height: 40%;
     }
-
+    .sliders {
+        margin-top:0px;
+    }
     nav.header--main-nav {
         height: 70px;
     }
