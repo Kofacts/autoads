@@ -63,7 +63,7 @@ $(document).ready(function () {
 
   $('.proceed1').click(function () {
     $("html, body").animate({
-      scrollTop: 0
+      scrollTop: $('.card-side').offset().top - 20
     }, "slow");
     $('.link1').removeClass('is-active');
     $('.first_stage').hide();
@@ -72,7 +72,7 @@ $(document).ready(function () {
   });
   $('.proceed2').click(function () {
     $("html, body").animate({
-      scrollTop: 0
+      scrollTop: $('.card-side').offset().top - 20
     }, "slow");
     $('.link2').removeClass('is-active');
     $('.first_stage').hide();
