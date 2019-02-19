@@ -41,6 +41,12 @@ $(document).ready(function () {
     }
 
   });
+  $(".slideDown").click(function () {
+    $('html,body').animate({
+        scrollTop: $(".believers--main").offset().top
+      },
+      'slow');
+  });
   $('.product-options').select2();
 
   //TESTIMONIAL SLIDER

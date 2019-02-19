@@ -1,12 +1,32 @@
 /**  styles **/
+@keyframes fill {
+    0% {
+        width: 0%;
+        height: 1px;
+    }
+
+    50% {
+        width: 100%;
+        height: 1px;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        background: #333;
+    }
+}
+
 body {
     font-family: 'Montserrat', Helvetica, sans-serif;
     overflow-x: hidden;
     width: 100%;
 }
+
 html {
     overflow-x: hidden;
 }
+
 .header--main {
     width: 100%;
     height: calc(100vh - 100px);
@@ -207,6 +227,21 @@ button.step-how {
     font-weight: 700;
 }
 
+.down-arrow {
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 0 !important;
+}
+
+.border-button {
+    z-index: 10;
+    outline: none;
+    border-width: 1px !important;
+}
+
 .header-text--sub {
     font-size: 1em;
     color: white;
@@ -236,17 +271,20 @@ i.zmdi {
     margin-top: 50px;
     padding-right: 20px;
 }
-#sliders > .slide { 
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
+
+#sliders>.slide {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
 }
+
 .slideDown {
     display: flex !important;
     justify-content: center;
 }
+
 i.zmdi {
     font-size: 30px;
 }
@@ -1017,6 +1055,54 @@ form .low {
     overflow: hidden;
 }
 
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+nav.fill ul li a {
+    transition: all 2s;
+}
+
+nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+
+nav.fill ul li a:hover {
+    color: #fff;
+    z-index: 1;
+}
+
+nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+}
+
 #nav,
 .nav_mobile {
     padding: 10px;
@@ -1050,15 +1136,19 @@ form .low {
     .trans_circle {
         height: 40%;
     }
+
     .header--main {
-        height:100vh !important;
+        height: 100vh !important;
     }
+
     #global-nav {
-        width:90% !important;
+        width: 90% !important;
     }
+
     .sliders {
-        margin-top:0px;
+        margin-top: 0px;
     }
+
     nav.header--main-nav {
         height: 70px;
     }
@@ -1066,7 +1156,7 @@ form .low {
     .home_nav_mobile {
         padding-top: 70px !important;
         padding-bottom: 50px !important;
-        margin-right:20px !important;
+        margin-right: 20px !important;
     }
 
     .li_mobile_home {
