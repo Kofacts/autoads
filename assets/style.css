@@ -33,7 +33,7 @@ html {
     transition: background .5s ease-out;
 }
 
-.link-to {
+button,.link-to {
     cursor: pointer;
 }
 
@@ -189,7 +189,9 @@ button.step-how {
     width: 200px;
     margin: 0 auto;
 }
-
+img.logo {
+    width:100px;
+}
 .how_it_works {
     margin-top: 200px;
     color: black;
@@ -256,6 +258,11 @@ button.step-how {
     z-index: 10;
     outline: none;
     border-width: 1px !important;
+    border: 1px solid #DB661C !important;
+}
+.border-button:hover {
+    background:#DB661C !important;
+    color:white !important;
 }
 
 .header--main-nav-items li a:hover {
@@ -465,6 +472,7 @@ i.icon {
     height: 100%;
     background-position: top right;
     background-size: auto;
+    padding-bottom: 40px;
 }
 
 .small-header {
@@ -1272,7 +1280,8 @@ li.it {
     }
 
     .header--main {
-        height: 100vh !important;
+        height: 100% !important;
+        padding-bottom: 30px;
     }
 
     #global-nav {
