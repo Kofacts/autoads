@@ -23,6 +23,7 @@ $(document).ready(function () {
       $('#global-nav').addClass('scrolled-nav');
     } else if (scrollTop < 100) {
       $('#global-nav').removeClass('scrolled-nav');
+      //this is a simple 
     }
 
   });

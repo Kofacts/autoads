@@ -241,7 +241,13 @@ button.step-how {
     outline: none;
     border-width: 1px !important;
 }
+.header--main-nav-items li a:hover {
+    border-bottom:1px solid white;
+    padding-bottom:10px;
+    left:0;
+    transition: left 5s;
 
+}
 .header-text--sub {
     font-size: 1em;
     color: white;
