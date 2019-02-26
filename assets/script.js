@@ -1,8 +1,5 @@
 $(document).ready(function () {
-
   //image slider 
-  $('.slide2,.slide3').hide();
-  $(".sliders > .slide:gt(0)").hide();
   // setInterval(changeSlides, 3000)
 
   // function changeSlides() {

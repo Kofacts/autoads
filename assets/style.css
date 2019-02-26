@@ -26,7 +26,11 @@ body {
 html {
     overflow-x: hidden;
 }
-
+.request-btn:hover {
+    background:white;
+    color:#db661c;
+    transition:background .5s ease-out;
+}
 .header--main {
     width: 100%;
     height: calc(100vh - 100px);
@@ -159,7 +163,9 @@ a.navbar-brand {
 div.header--main-nav-col {
     width: calc(100vw / 3) !important;
 }
-
+a, a:hover {
+    cursor: pointer;
+}
 button.step-how {
     height: 50px;
     width: 50px;
@@ -246,6 +252,7 @@ button.step-how {
     padding-bottom:10px;
     left:0;
     transition: left 5s;
+    cursor: pointer;
 
 }
 .header-text--sub {
