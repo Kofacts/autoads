@@ -31,6 +31,9 @@ html {
     color:#db661c;
     transition:background .5s ease-out;
 }
+.link-to {
+    cursor: pointer;
+}
 .header--main {
     width: 100%;
     height: calc(100vh - 100px);
