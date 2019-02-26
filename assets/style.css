@@ -26,14 +26,17 @@ body {
 html {
     overflow-x: hidden;
 }
+
 .request-btn:hover {
-    background:white;
-    color:#db661c;
-    transition:background .5s ease-out;
+    background: white;
+    color: #db661c;
+    transition: background .5s ease-out;
 }
+
 .link-to {
     cursor: pointer;
 }
+
 .header--main {
     width: 100%;
     height: calc(100vh - 100px);
@@ -42,7 +45,7 @@ html {
 }
 
 nav.header--main-nav {
-    height: 60px;
+    height: 80px;
     border-radius: 20px;
     background: #DB661C !important;
 }
@@ -166,9 +169,12 @@ a.navbar-brand {
 div.header--main-nav-col {
     width: calc(100vw / 3) !important;
 }
-a, a:hover {
+
+a,
+a:hover {
     cursor: pointer;
 }
+
 button.step-how {
     height: 50px;
     width: 50px;
@@ -200,10 +206,11 @@ button.step-how {
 }
 
 .header--main-nav-link {
-    padding-top: 20px;
+    padding-top: 40px;
     font-size: 20px;
     color: white;
-    margin-top: 15px;
+    margin-top: 0px;
+    height: 100%;
 }
 
 .header--main-nav-items {
@@ -212,13 +219,13 @@ button.step-how {
 }
 
 .header--main-nav-items li {
-    padding: 20px;
+    padding: 30px;
     padding-top: 30px;
     color: white;
 }
 
 .header--main-nav-items.r {
-    margin-left: -30px
+    margin-left: -90px
 }
 
 .header-content-right--img {
@@ -250,14 +257,16 @@ button.step-how {
     outline: none;
     border-width: 1px !important;
 }
+
 .header--main-nav-items li a:hover {
-    border-bottom:1px solid white;
-    padding-bottom:10px;
-    left:0;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    left: 0;
     transition: left 5s;
     cursor: pointer;
 
 }
+
 .header-text--sub {
     font-size: 1em;
     color: white;
@@ -299,11 +308,49 @@ i.zmdi {
 .slideDown {
     display: flex !important;
     justify-content: center;
+    margin-top: 80px;
 }
 
 i.zmdi {
     font-size: 30px;
 }
+
+/* Effect 1: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
 
 button.slider {
     width: 70px;
@@ -1148,9 +1195,80 @@ nav.fill ul li a:hover:after {
     transition: right 1s;
 }
 
+.fixed-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-top: 20px;
+    background: #DB661C !important;
+    width: 80%;
+    justify-content: center;
+    float: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 30px;
+    height: 70px;
+}
+
+div.content {
+    margin-top: 70px;
+}
+
+.navbar-logo {
+    height: 100%;
+    background: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+li.it {
+    padding-right: 50px;
+}
+
+/* BUTTON 2 */
+.btn-2::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+
+.btn-2:hover:after {
+    width: 100%;
+}
+
+.header-cta {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
 @media only screen and (max-width: 600px) {
     .trans_circle {
-        height: 40%;
+        height: 30%;
+    }
+
+    .navbar-logo {
+        height: 100%;
+        background: transparent;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 10px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        margin-top: 100px;
+        background: #DB661C;
+    }
+
+    .fixed-top {
+        border-radius: 0px;
+        width: 100%;
+        margin-top: 0px;
     }
 
     .header--main {
@@ -1303,5 +1421,15 @@ nav.fill ul li a:hover:after {
 
     .header--caption {
         padding-top: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .position-md-absolute {
+        position: absolute;
+    }
+
+    .navbar-nav .nav-item:nth-child(2) {
+        margin-right: 192px;
     }
 }

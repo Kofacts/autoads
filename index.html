@@ -24,83 +24,29 @@
     <!-- main section-->
     <section class="header--main">
         <div class="container">
-            <nav class="header--main-nav navbar navbar-expand-lg  navbar-light bg-light">
-                <div class="row d-lg-none mr-3 ">
-                    <div class="col-sm-6 pt-3">
-                        <span class="pt-3">Logo</span>
-                    </div>
-
-                    <div class="col-sm-6 float-right">
-                        <div id="nav-icon2" class="home_nav">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-
-                <nav class="row mobile-row">
-                    <div class="header--main-nav-col stroke col-lg-4">
-                        <ul class="header--main-nav-items l">
-                            <li>
-                                <a>
-                                    Solutions
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    Pricing
-                                </a>
-                            </li>
-                            <li>
-                                <a>
-                                    Company
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="header--main-nav-col col-lg-4">
-                        <div class="header--main-nav-link logo-box-nav">
-                            <center>
-                                <span>Logo</span>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="header--main-nav-col col-lg-4">
-                        <ul class="header--main-nav-items r">
-                            <li>
-                                <a>Resources</a>
-                            </li>
-                            <li>
-                                <a>
-                                    Request A Demo
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-
-                <!-- <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-md flex-column fixed-top navbar-dark bg-dark">
+                <a class="navbar-brand navbar-logo align-self-center m-0 pb-3 position-md-absolute pb-md-0" href="#">
+                    Logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav  mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <div class="collapse navbar-collapse justify-content-md-center w-100" id="navbarNav">
+                    <ul class="navbar-nav cl-effect-1 text-center">
+                        <li class="nav-item it active">
+                            <a class="nav-link" href="#">Solutions <span class="sr-only">(current)</span></a>
                         </li>
-                        <li>
-                            
+                        <li class="nav-item it">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item it">
+                            <a class="nav-link" href="#">Company</a>
+                        </li>
+                        <li class="nav-item it">
+                            <a class="nav-link" href="#">Resources</a>
                         </li>
                     </ul>
-                </div> -->
+                </div>
             </nav>
 
             <!-- slider mobile content-->
@@ -124,6 +70,7 @@
                             <br>
                             <span class="header-text--sub">
                                 We brings all advertising data into one platform giving paid marketers the ability to
+                                quickly visualize, analyze, report, and optimize their ad performance.the ability to
                                 quickly visualize, analyze, report, and optimize their ad performance.
                             </span>
                             <br><br><br>
@@ -143,6 +90,7 @@
                             <br>
                             <span class="header-text--sub">
                                 We brings all advertising data into one platform giving paid marketers the ability to
+                                quickly visualize, analyze, report, and optimize their ad performance.the ability to
                                 quickly visualize, analyze, report, and optimize their ad performance.
                             </span>
                             <br><br><br>
@@ -157,11 +105,12 @@
                     <div class="row slide slide1">
                         <div class="col-sm-12 col-lg-6 mt-5">
                             <span class="header-text">
-                               Accertained Content Here
+                                Accertained Content Here
                             </span>
                             <br>
                             <span class="header-text--sub">
                                 We brings all advertising data into one platform giving paid marketers the ability to
+                                quickly visualize, analyze, report, and optimize their ad performance.the ability to
                                 quickly visualize, analyze, report, and optimize their ad performance.
                             </span>
                             <br><br><br>
@@ -247,10 +196,7 @@
                                 paid marketers the ability to quickly visualize, analyze, report,
                                 and optimize their ad performance.
                             </p>
-
-                            <button class="header-cta button-outline mt-3">
-                                Request Demo <i class="icon">&#x2192;</i>
-                            </button>
+                            <button class="header-cta request-btn border-button" style="background:white; color:#DB661C">Request A Demo <i class="icon">&#x2192;</i></button>
                         </div>
                     </div>
                 </div>
@@ -282,9 +228,7 @@
                                 and optimize their ad performance.
                             </p>
 
-                            <button class="header-cta button-outline mt-3">
-                                Request Demo <i class="icon">&#x2192;</i>
-                            </button>
+                            <button class="header-cta request-btn border-button" style="background:white; color:#DB661C">Request A Demo <i class="icon">&#x2192;</i></button>
                         </div>
                     </div>
                 </div>
@@ -487,8 +431,8 @@
                 $(".sliders").owlCarousel({
                     autoPlay: 4000,
                     slideSpeed: 1000,
-                    navigation: true,
-                    pagination: false,
+                    navigation: false,
+                    pagination: true,
                     singleItem: true,
                     dots: true,
                 });
